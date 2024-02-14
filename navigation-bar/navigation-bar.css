@@ -1,0 +1,37 @@
+/* VERSIONE MOBILE */
+@media screen and (min-width: 576px) {
+  /* Inserisci qui le regole CSS da applicare quando la larghezza dello schermo è di almeno 576px */
+}
+
+/* VERSIONE DESKTOP */
+@media screen and (min-width: 1200px) {
+}
+
+.container {
+  background-color: rgb(252, 247, 227);
+  border-radius: 30px;
+  padding: 28px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container button {
+  border: 2px solid rgb(243, 223, 134);
+  background-color: rgb(243, 223, 134);
+  color: rgb(91, 37, 15);
+  border-radius: 96px;
+  padding: 26px 49px;
+  margin-right: 10px;
+}
+
+.large-button {
+  flex: 2;
+  font-size: 16px;
+  display: flex;
+}
+
+.large-button img {
+  width: 24px; /* Imposta la larghezza dell'immagine */
+  height: 24px; /* Imposta l'altezza dell'immagine */
+  margin-right: 10px; /* Aggiunge spazio tra l'immagine e il testo */
+}
