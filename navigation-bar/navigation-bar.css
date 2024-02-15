@@ -1,12 +1,3 @@
-/* VERSIONE MOBILE */
-@media screen and (min-width: 576px) {
-  /* Inserisci qui le regole CSS da applicare quando la larghezza dello schermo è di almeno 576px */
-}
-
-/* VERSIONE DESKTOP */
-@media screen and (min-width: 1200px) {
-}
-
 .container {
   background-color: rgb(252, 247, 227);
   border-radius: 30px;
@@ -49,4 +40,134 @@
 
 .img {
   height: 57px;
+}
+
+/* css dei box articoli */
+
+.product-card {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(252, 247, 227);
+  border-radius: 70px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 80%;
+}
+
+.product-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 247, 227);
+}
+
+.product-info h2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: rgb(89, 37, 16);
+  margin-left: 53px;
+}
+
+.product-info p {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-left: 10px;
+  color: rgb(89, 37, 16);
+  margin-left: 53px;
+}
+
+.button {
+  text-align: center;
+}
+
+.info-price {
+  display: flex;
+  color: rgb(89, 37, 16);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.product-info button {
+  padding: 10px 20px;
+  background-color: rgb(243, 223, 134);
+  color: rgb(89, 37, 16);
+  border: none;
+  border-radius: 8%;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-right: 92px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left: 10px;
+  color: rgb(89, 37, 16);
+}
+
+.boxpadrediTutti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* inseriamo l'articolo sotto */
+/* Aggiungi queste regole CSS per il box giallo */
+
+.yellow-box {
+  background-color: rgb(252, 247, 227);
+  border-radius: 20px; /* Arrotonda i bordi del box */
+  padding: 50px; /* Aggiungi spazio interno al box */
+  margin-top: 20px; /* Aggiungi spazio sopra al box */
+  display: flex; /* Usa flexbox per allineare il contenuto */
+  justify-content: center; /* Allinea il contenuto orizzontalmente al centro */
+  align-items: center; /* Allinea il contenuto verticalmente al centro */
+  flex-direction: column;
+}
+
+.yellow-box img {
+  margin-right: 20px; /* Aggiungi spazio a destra dell'immagine */
+}
+
+.yellow-box p {
+  margin: 0; /* Rimuovi il margine del paragrafo */
+}
+
+.immagine {
+  margin-top: 20px;
+  width: 709px;
+  height: auto;
+}
+
+/* PER METTERE ANCHE LA VERSIONE MOBILE*/
+@media screen and (min-width: 576px) {
+}
+
+/* VERSIONE TABLET*/
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: calc(
+      50% - 20px
+    ); /* Calcola la larghezza della card per avere due card per riga con uno spazio tra di esse */
+    margin: 10px; /* Spazio tra le card */
+  }
+}
+
+/* PER METTERE ANCHE LA VERSIONE DESKTOP*/
+@media screen and (min-width: 1200px) {
 }
